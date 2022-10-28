@@ -1,11 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useRef } from 'react'
 import Animation from '../components/Animation'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import useScrollPosition from '../hooks/useScrollPosition'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -30,12 +26,10 @@ export default function Home() {
       <Head>
         <title>MedinaVilla: ¡Hola!</title>
         <meta name="description" content="Hola, soy Jesús Medina, Fullstack Developer" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
 
       <main className={styles.main}>
-        {/* <Navbar /> */}
-
         <div className={styles.header}>
           <div className={styles.imageContainer}>
             <Animation fadeIn={true}>
@@ -57,7 +51,6 @@ export default function Home() {
             </div>
           </div>
         </Animation>
-        {/* <div ref={divv} className={` ${styles.reveal} ${styles.fadeBottom}}`}> */}
         <Animation from="bottom">
           <div>
             <div className={`${styles.content}`} >
@@ -156,7 +149,6 @@ export default function Home() {
             </div>
           </div>
         </Animation>
-        <Footer />
       </main >
     </div >
   )

@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Animation from '../components/Animation'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import styles from '../styles/Contacto.module.css'
 
 export default function Contacto() {
@@ -11,7 +9,7 @@ export default function Contacto() {
       <Head>
         <title>Contacto</title>
         <meta name="description" content="Página de contacto" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
 
       {/* <Navbar /> */}
@@ -50,8 +48,6 @@ export default function Contacto() {
         </div>
         </Animation>
       </main>
-
-      <Footer />
     </div>
   )
 }

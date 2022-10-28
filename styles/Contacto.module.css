@@ -1,5 +1,8 @@
 @media screen and (min-width: 0px) {
 
+  .main{
+    /* height:calc(100vh - ); */
+  }
   .flexbox {
     display: flex;
     flex-direction: column;

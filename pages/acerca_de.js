@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer'
 import styles from '../styles/AcercaDe.module.css'
 import Animation from '../components/Animation';
 
@@ -11,7 +9,7 @@ export default function AcercaDe() {
       <Head>
         <title>Acerca de</title>
         <meta name="description" content="Hola. Soy Jesús Medina,Ing. en Sistemas Computacionales egresado del IPN y soy un apasionado del desarrollo web y desarrollo móvil." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -69,8 +67,6 @@ export default function AcercaDe() {
             </div>
           </section>
         </div>
-
-        <Footer />
       </main>
     </div>
   )

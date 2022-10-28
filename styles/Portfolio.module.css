@@ -49,6 +49,11 @@
     color: var(--warning-text-color);
     font-size: 1.5em;
   }
+
+  .subtitle:hover{
+    cursor: pointer;
+    opacity: 0.8;
+  }
   
   .box {
     background-color: var(--main-bg-color);

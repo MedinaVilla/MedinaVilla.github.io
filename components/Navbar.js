@@ -5,8 +5,6 @@ import styles from "./../styles/components/Navbar.module.css";
 import { useRouter } from 'next/router';
 import useScrollPosition from '../hooks/useScrollPosition';
 import { useWindowSize } from '../hooks/useWindowSize';
-import Animation from './Animation';
-
 
 const Navbar = () => {
     const router = useRouter()
@@ -37,7 +35,7 @@ const Navbar = () => {
 
     if (loading) <></>; else
         return (
-          <div className={`${styles.navbar} ${!scrollPosition == 0 && !showNavbarAside ? styles.opacity : ""}`}>
+            <div className={`${styles.navbar} ${!scrollPosition == 0 && !showNavbarAside ? styles.opacity : ""}`}>
                 {
                     windowSize.width < 660 ? <><div onClick={() => { setShowNavbarAside(!showNavbarAside) }} className={styles.logo} >
                         <Image layout="fill" src='/hamburguer.svg' alt="twitter"></Image>
@@ -55,7 +53,8 @@ const Navbar = () => {
                             </div>
                         }
                     </> : <><div>
-                        LOGO
+                    <Image width={32} height={32}  src='/logo_white.png' alt="twitter"></Image>
+
                     </div>
                         <div>
                             <ul className={styles.ul}>
@@ -66,15 +65,15 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className={styles.logo_container}>
-                            <div className={styles.logo} >
+                            <a target="_blank" href="https://twitter.com/MedinaVilla23" rel="noopener noreferrer" className={styles.logo} >
                                 <Image layout="fill" src='/twitter.svg' alt="twitter"></Image>
-                            </div>
-                            <div className={styles.logo} >
+                            </a>
+                            <a target="_blank" href="https://github.com/MedinaVilla" rel="noopener noreferrer" className={styles.logo} >
                                 <Image layout="fill" src='/github.svg' alt="github"></Image>
-                            </div>
-                            <div className={styles.logo} >
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/josue-de-jesus-medina-villa/" rel="noopener noreferrer" className={styles.logo} >
                                 <Image layout="fill" src='/linkedin.svg' alt="linkedin"></Image>
-                            </div>
+                            </a>
                         </div>
                     </>
                 }
