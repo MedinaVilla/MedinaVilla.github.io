@@ -34,7 +34,7 @@ export default function Home() {
           <div className={styles.imageContainer}>
             <Animation fadeIn={true}>
               <div className={styles.image} >
-                <Image layout="fill" src='/image.png' alt="image"></Image>
+                <Image style={{borderRadius:"50%"}} layout="fill" src='/meColor.jpg' alt="image"></Image>
               </div>
             </Animation>
           </div>

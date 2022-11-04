@@ -53,8 +53,11 @@ const Navbar = () => {
                             </div>
                         }
                     </> : <><div>
-                    <Image width={32} height={32}  src='/logo_white.png' alt="twitter"></Image>
-
+                        <Link href="/">
+                            <div>
+                            <Image width={32} height={32} style={{ cursor: "pointer" }} src='/logo_white.png' alt="twitter"></Image>
+                            </div>
+                        </Link>
                     </div>
                         <div>
                             <ul className={styles.ul}>

@@ -23,8 +23,9 @@ export default function AcercaDe() {
             <Image layout="fill" src='/twitter_preview.png' alt="medwitter"></Image>
           </div>
           <div className={styles.content}>
+          <a target="_blank" href="https://endearing-trifle-1099a5.netlify.app/" rel="noopener noreferrer">
             <h3 align="right" className={styles.subtitle}>Medwitter </h3>
-
+            </a>
             <Animation from='right'>
               <div className={styles.box}>
                 Una página réplica de la aplicación web de Twitter. Cuenta con funcionalidad base de la plataforma y todos los módulos que contiene. Fue realizado con base al módulo de diseño CCS3 Flexbox y media queries para que sea responsivo para múltiples dispositivos.

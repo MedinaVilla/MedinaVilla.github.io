@@ -52,18 +52,16 @@
 
   .subtitle:hover{
     cursor: pointer;
+    text-decoration: underline;
     opacity: 0.8;
   }
   
   .box {
     background-color: var(--main-bg-color);
-    /* height: 260px; */
-    /* max-width: 600px; */
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     padding: 2em 2em;
     font-size: 0.9em;
     color: rgb(217, 217, 217);

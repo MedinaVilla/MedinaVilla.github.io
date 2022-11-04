@@ -22,7 +22,7 @@ export default function AcercaDe() {
               Últimamente me he puesto como hobbie realizar réplicas de páginas famosas como Twitter, Instagram, Pizza Dominos, etc.<br /><br />
             </div>
             <div className={styles.logo} >
-              <Image layout="fill" src='/image.png' alt="twitter"></Image>
+              <Image layout="fill" src='/Me.png' alt="twitter"></Image>
             </div>
           </div>
         </Animation>
